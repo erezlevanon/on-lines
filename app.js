@@ -12,7 +12,7 @@ app.directive('draggable', function ($document) {
             startY = 2800;
         } else if (id === 'guide') {
             startX = 680;
-            startY = 3050;
+            startY = 2878;
         }
 
         let x = startX,
