@@ -59,12 +59,12 @@ p {
 }
 
 #steps h1 {
-    margin-left: 200px;
+    margin-left: 10%;
 }
 
 #steps h2 {
     margin-bottom: 0;
-    margin-left: 250px;
+    margin-left: 10.5%;
     font-family: Teko, sans-serif;
     font-size: 60px;
     -webkit-background-clip: text;
@@ -80,11 +80,11 @@ p {
 }
 
 #steps p {
-    margin-left: 200px;
+    margin-left: 10.5%;
 }
 
 #manifest {
-    margin-left: 200px;
+    margin-left: 10.5%;
 }
 
 #get-the-files {
@@ -119,6 +119,7 @@ p {
     font-size: 30px;
     padding: 25px 25px;
 }
+
 #guide span {
     cursor: pointer;
     right: 0;
@@ -133,5 +134,9 @@ p {
 }
 
 #how-to img{
+    width: 50%;
     opacity: 50%;
+    border: #bd4341 50px solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

@@ -2,7 +2,6 @@ const app = angular.module('WIFIKite', ['ngAnimate', 'ngMaterial', 'ngMessages']
 
 app.directive('draggable', function ($document) {
     return function (scope, element, attr) {
-        console.log(attr.$$element.parent()[0].id);
         const id = attr.$$element.parent()[0].id;
 
         let startX = 0;
@@ -92,10 +91,6 @@ class MainController {
 
     hideGuide() {
         this.shouldShowGuide = false;
-    }
-
-    openGuide() {
-        this.window_.alert('You did it. go to the next step.')
     }
 
 }

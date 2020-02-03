@@ -36,14 +36,7 @@
 </section>
 <img id="mesh" class="imported-animation" src="media/mesh.gif">
 <section id="steps" layout="column" layout-align="start start">
-    <section id="guide" ng-if="ctrl.shouldShowGuide">
-        <div draggable>
-            🙊 UNDER CONSTRUCTION 🙊
-        </div>
-        <span ng-click="ctrl.hideGuide()">
-            HIDE
-        </span>
-    </section>
+
     <h1>
         So what should you do?
     </h1>
@@ -56,11 +49,7 @@
         Build the kite, using a safety vest, some bamboo skewers,<br/>
         and these 3d printing files (optional).<br/>
         <a ng-click="ctrl.showPlans()">plans</a>
-        <section id="plans"
-                 ng-if="ctrl.shouldShowPlans">
-            <h1 ng-click="ctrl.hidePlans()">HIDE</h1>
-            <img src="media/sode-kite-plans-2.gif" draggable style="position: relative; top: 0; left: 0;">
-        </section>
+
     </p>
     <a href="3d_files/wifi_kite_parts.stl" class="imported-animation">
         <img id="get-the-files" class="imported-animation" src="media/download_files.gif">
@@ -70,6 +59,20 @@
     </section>
     <h2>STEP 3</h2>
     <img id="final" class="imported-animation" src="media/final.gif">
+</section>
+<!-- DRAGGABLES -->
+<section id="plans"
+         ng-if="ctrl.shouldShowPlans">
+    <h1 ng-click="ctrl.hidePlans()">HIDE</h1>
+    <img src="media/sode-kite-plans-2.gif" draggable style="position: relative; top: 0; left: 0;">
+</section>
+<section id="guide" ng-if="ctrl.shouldShowGuide">
+    <div draggable>
+        🙊 UNDER CONSTRUCTION 🙊
+    </div>
+    <span ng-click="ctrl.hideGuide()">
+            HIDE
+        </span>
 </section>
 </body>
 <script src="angular/angular.js"></script>
